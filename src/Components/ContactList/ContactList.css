@@ -1,0 +1,72 @@
+/* .contact-list {
+  border-right: 1px solid gray;
+} */
+
+.message-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-avatar {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.message-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2px;
+  padding: 0 12px;
+}
+
+.message-header {
+  width: 100%;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "system-ui", sans-serif;
+}
+
+.contact-name {
+  font-size: 18px;
+  font-weight: 700;
+  color: dodgerblue;
+}
+
+.message-time {
+  font-size: 14px;
+  color: #474747;
+}
+
+.message-content {
+  width: 100%;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "system-ui", sans-serif;
+}
+
+.message {
+  font-size: 14px;
+  color: #474747;
+}
+
+.unseen-badge {
+  font-size: 14px;
+
+  border-radius: 50%;
+  padding: 4px 8px;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: 700;
+}

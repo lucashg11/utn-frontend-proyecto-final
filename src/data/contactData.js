@@ -1,0 +1,24 @@
+const contact_data = [
+  {
+    contact_id: 1,
+    contact_name: "Juan Perez",
+    contact_avatar:
+      "https://img.freepik.com/psd-gratis/ilustracion-3d-avatar-o-perfil-humano_23-2150671142.jpg?t=st=1764678532~exp=1764682132~hmac=672b05118d45436580098309a2129b6630730f9e562dda9c58583c07cd5e69a6&w=1480",
+    contact_unseen_messages: 5,
+    last_message_content: "testing",
+    last_message_state: "RECIVED", //'RECIVED', 'NOT-SEEN', 'SEEN'
+    last_message_created_at: new Date(),
+  },
+  {
+    contact_id: 2,
+    contact_name: "Maria Rodriguez",
+    contact_avatar:
+      "https://img.freepik.com/psd-gratis/ilustracion-3d-avatar-o-perfil-humano_23-2150671136.jpg?t=st=1764678599~exp=1764682199~hmac=746226b023700505c508a4b7328b11d35b490c2e080bcdf9a3b724d17b368a7a&w=1480",
+    contact_unseen_messages: 0,
+    last_message_content: "Que tal?",
+    last_message_state: "SEEN", //'RECIVED', 'NOT-SEEN', 'SEEN'
+    last_message_created_at: new Date(),
+  },
+];
+
+export default contact_data;
