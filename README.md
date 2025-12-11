@@ -1,16 +1,12 @@
-# React + Vite
+# Diplomatura Frontend - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Proyecto final, replica de aplicacion de chat donde aplicamos los conocimientos adquiridos de frontend y los plasmamos utilizando la libreria de React para crear esta replica de aplocacion de chat. 
+En el se podra observar la carga simulada de mensajes y la vista de los mismos. Se utilizo la dependencia de react-router para el enrutamiento y los hooks useState() para los cambios dinamicos de estado del componente, useEffect() para los efectos secundarios del renderizado del componente y useContext() para el pasaje y utilizacion de funcionalidad e informacion creando contextos para los componentes.
 
-Currently, two official plugins are available:
+## Funcionalidades del Proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Pantalla de visualizacion de los chats. En esta pantalla se renderizaran componentes que nos mostraran una imagen de perfil del contacto, el nombre del contacto, la hora del ultimo mensaje visto y si hay mensajes sin ver
+- Pantalla de visualizacion del mensaje. En esta pantalla se renderizaran un 
+- Simulacion para el envio de un mensaje.
+- 
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
