@@ -11,6 +11,12 @@
   background-color: azure;
 }
 
+.searchbar label {
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
 .searchbar-icon {
   width: 24px;
 }
@@ -21,15 +27,12 @@
   padding: 0 16px;
   border-radius: 34px;
   border: none;
+  outline: none;
   background: transparent;
   color: gray;
   font-size: 16px;
 }
 
 .searchbar-input::placeholder {
-  font-size: 16px;
-}
-
-.searchbar-input:focus {
-  border: transparent;
+  font-size: 14px;
 }

@@ -17,7 +17,7 @@ function ChatScreen() {
     );
   }
   return (
-    <div>
+    <div className="chat-list-container">
       <ContactSideBar />
     </div>
   );

@@ -1,18 +1,19 @@
-import React from "react";
-import "./MessagesScreen.css";
-import ContactSideBar from "../../Components/ContactSideBar/ContactSideBar";
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { ContactDetailContext } from "../../Context/ContactDetailContext";
+import ContactSideBar from "../../Components/ContactSideBar/ContactSideBar";
+import MessagesList from "../../Components/MessagesList/MessagesList";
+import AddNewMessage from "../../Components/AddNewMessage/AddNewMessage";
+import "./MessagesScreen.css";
+import { ContactListContext } from "../../Context/ContactListContext";
 
 function MessagesScreen() {
-  const { contactSelected, loadingContact, loadingContactById } =
-    useContext(ContactDetailContext);
-
-  /* console.log(contactSelected, loadingContact); */
+  const { contactSelected } = useContext(ContactDetailContext);
+  const { loadingContactListState } = useContext(ContactListContext);
+  const isMobile = window.innerWidth <= 768;
   return (
     <div className="messages-container">
       <ContactSideBar />
-      {loadingContact ? (
+      {loadingContactListState ? (
         <div className="loading-content">
           <p>Cargando...</p>
         </div>
@@ -28,9 +29,8 @@ function MessagesScreen() {
               {contactSelected.contact_name}
             </h2>
           </div>
-          <p className="message-wrapper">
-            {contactSelected.last_message_content}
-          </p>
+          <MessagesList />
+          <AddNewMessage />
         </div>
       )}
     </div>

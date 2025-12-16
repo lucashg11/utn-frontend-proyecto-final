@@ -8,8 +8,6 @@ function ContactList() {
 
   return (
     <div className="contact-list">
-      {/* <TopBar />
-      <ContactSearchForm /> */}
       {contactListState.map(function (contact) {
         return (
           <Link

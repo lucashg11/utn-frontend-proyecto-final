@@ -6,8 +6,6 @@ import TopBar from "../TopBar/TopBar";
 import ContactSearchForm from "../ContactSearchForm/ContactSearchForm";
 
 function ContactSideBar() {
-  /* console.log({ contactListState, loadingContactListState }); */
-
   return (
     <aside className="contact-sidebar">
       <TopBar />

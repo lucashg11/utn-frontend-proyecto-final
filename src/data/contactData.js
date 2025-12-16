@@ -8,6 +8,15 @@ const contact_data = [
     last_message_content: "testing",
     last_message_state: "RECIVED", //'RECIVED', 'NOT-SEEN', 'SEEN'
     last_message_created_at: new Date(),
+    messages: [
+      {
+        message_id: 1,
+        message_content: "Hola que tal",
+        message_state: "SEEN",
+        message_create_at: new Date(),
+        send_by_me: true,
+      },
+    ],
   },
   {
     contact_id: 2,
@@ -18,6 +27,15 @@ const contact_data = [
     last_message_content: "Que tal?",
     last_message_state: "SEEN", //'RECIVED', 'NOT-SEEN', 'SEEN'
     last_message_created_at: new Date(),
+    messages: [
+      {
+        message_id: 2,
+        message_content: "todo bien?",
+        message_state: "SEEN",
+        message_create_at: new Date(),
+        send_by_me: false,
+      },
+    ],
   },
 ];
 
