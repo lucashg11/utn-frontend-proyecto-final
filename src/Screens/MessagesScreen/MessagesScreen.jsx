@@ -17,6 +17,7 @@ function MessagesScreen() {
       </div>
       {loadingContactListState ? (
         <div className="loading-content">
+          <img className="loading-img" src="/chat-logo.svg" alt="" />
           <p className="loading-text">Cargando...</p>
         </div>
       ) : (
