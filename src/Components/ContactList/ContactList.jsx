@@ -26,7 +26,7 @@ function ContactList() {
                 {/* <p className="message-time">{contact.last_message_created_at}</p> */}
                 <p className="message-time">10:00</p>
               </div>
-              <div className="message-content">
+              <div className="messagelist-content">
                 <p className="message">{contact.last_message_content}</p>
                 {contact.contact_unseen_messages > 0 && (
                   <span className="unseen-badge">

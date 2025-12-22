@@ -1,12 +1,22 @@
 .messages-container {
   display: flex;
+  background-color: azure;
+}
+
+.messages-sidebar {
+  width: 100%;
+  max-width: 555px;
 }
 
 .loading-content {
   width: 100%;
+  height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.loading-text {
+  color: dodgerblue;
 }
 
 .loading-content p {
@@ -14,7 +24,7 @@
   font-family: "system-ui", sans-serif;
 }
 
-.loaded-message {
+.loaded-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -44,4 +54,25 @@
   border: 3px solid azure;
   border-radius: 24px;
   background-color: azure;
+}
+
+.back-icon {
+  font-size: 32px;
+  color: azure;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .messages-sidebar {
+    display: none;
+  }
+
+  .message-topbar {
+    padding: 4px;
+  }
+
+  .back-icon {
+    display: block;
+  }
 }

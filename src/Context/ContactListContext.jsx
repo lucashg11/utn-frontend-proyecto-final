@@ -57,6 +57,7 @@ const ContactListContextProvider = () => {
     loadContactList,
     getContactById,
     updateContactById,
+    addNewContact,
   };
 
   return (

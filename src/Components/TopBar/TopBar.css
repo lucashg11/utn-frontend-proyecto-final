@@ -30,20 +30,21 @@
   gap: 32px;
   fill: white;
 }
-
-.topbar-add-contact {
-  background-image: url("/new-contact.svg");
-  background-position: center;
-  background-size: cover;
-  border: none;
+.menu-icon-wrapper,
+.addcontact-icon-wrapper {
   background-color: transparent;
+  border: none;
 }
 
-.topbar-add-contact,
-.topbar-menu {
-  width: 32px;
-  height: 32px;
+.addcontact-icon,
+.menu-icon {
+  font-size: 36px;
+  color: azure;
   cursor: pointer;
+}
+
+.tooltip {
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {

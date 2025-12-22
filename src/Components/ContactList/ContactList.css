@@ -47,7 +47,7 @@
   color: #474747;
 }
 
-.message-content {
+.messagelist-content {
   width: 100%;
   padding-right: 4px;
   display: flex;
@@ -65,7 +65,7 @@
   font-size: 14px;
 
   border-radius: 50%;
-  padding: 4px 8px;
+  padding: 4px 10px;
   background-color: dodgerblue;
   color: white;
   font-weight: 700;

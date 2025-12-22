@@ -1,25 +1,30 @@
 import React, { useContext } from "react";
 import { ContactDetailContext } from "../../Context/ContactDetailContext";
+import { ContactListContext } from "../../Context/ContactListContext";
 import ContactSideBar from "../../Components/ContactSideBar/ContactSideBar";
 import MessagesList from "../../Components/MessagesList/MessagesList";
-import AddNewMessage from "../../Components/AddNewMessage/AddNewMessage";
 import "./MessagesScreen.css";
-import { ContactListContext } from "../../Context/ContactListContext";
+import { IoMdArrowBack } from "react-icons/io";
+import { Link } from "react-router";
 
 function MessagesScreen() {
   const { contactSelected } = useContext(ContactDetailContext);
   const { loadingContactListState } = useContext(ContactListContext);
-  const isMobile = window.innerWidth <= 768;
   return (
     <div className="messages-container">
-      <ContactSideBar />
+      <div className="messages-sidebar">
+        <ContactSideBar />
+      </div>
       {loadingContactListState ? (
         <div className="loading-content">
-          <p>Cargando...</p>
+          <p className="loading-text">Cargando...</p>
         </div>
       ) : (
-        <div className="loaded-message">
+        <div className="loaded-content">
           <div className="message-topbar">
+            <Link to="/">
+              <IoMdArrowBack className="back-icon" />
+            </Link>
             <img
               className="contact-avatar"
               src={contactSelected.contact_avatar}
@@ -30,7 +35,6 @@ function MessagesScreen() {
             </h2>
           </div>
           <MessagesList />
-          <AddNewMessage />
         </div>
       )}
     </div>

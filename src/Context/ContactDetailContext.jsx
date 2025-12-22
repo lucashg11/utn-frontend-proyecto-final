@@ -21,7 +21,7 @@ const ContactDetailContextProvider = () => {
       message_content: content,
       message_state: "NOT_SEND",
       message_created_at: new Date(),
-      send_by_my: true,
+      send_by_me: true,
     };
 
     const contactSelectedCloned = { ...contactSelected };

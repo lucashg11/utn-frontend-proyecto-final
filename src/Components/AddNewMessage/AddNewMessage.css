@@ -1,0 +1,84 @@
+form {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  left: 16px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 8px 16px;
+  border-radius: 24px;
+  z-index: 10;
+}
+
+.message-input {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-family: "system-ui", sans-serif;
+  font-size: 16px;
+  resize: none;
+}
+
+.send-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: dodgerblue;
+  border: none;
+  height: 46px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.send-icon {
+  color: azure;
+  font-size: 32px;
+  transform: rotate(45deg);
+  margin-right: 6px;
+}
+
+.plus-icon,
+.sticker-icon,
+.attach-icon {
+  cursor: pointer;
+  font-size: 32px;
+  color: dodgerblue;
+  margin-right: 32px;
+}
+
+.attach-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  form {
+    right: 4px;
+    left: 4px;
+    padding: 4px;
+    padding-left: 16px;
+  }
+
+  .plus-icon-wrapper {
+    display: none;
+  }
+
+  .send-icon-wrapper {
+    width: 58px;
+    height: 42px;
+  }
+
+  .attach-icon {
+    display: block;
+  }
+
+  .attach-icon,
+  .sticker-icon {
+    font-size: 24px;
+  }
+}
