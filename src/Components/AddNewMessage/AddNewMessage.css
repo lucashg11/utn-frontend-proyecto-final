@@ -41,6 +41,7 @@ form {
   font-size: 32px;
   transform: rotate(45deg);
   margin-right: 6px;
+  outline: none;
 }
 
 .plus-icon,
@@ -50,6 +51,7 @@ form {
   font-size: 32px;
   color: dodgerblue;
   margin-right: 32px;
+  outline: none;
 }
 
 .attach-icon {

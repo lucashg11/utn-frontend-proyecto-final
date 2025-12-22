@@ -6,7 +6,7 @@
   justify-content: space-between;
   margin-bottom: 8px;
   padding-left: 16px;
-
+  border-right: 1px solid azure;
   background-color: dodgerblue;
 }
 
@@ -41,6 +41,7 @@
   font-size: 36px;
   color: azure;
   cursor: pointer;
+  outline: none;
 }
 
 .tooltip {
@@ -48,6 +49,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .topbar {
+    border-right: none;
+  }
   .topbar-back-icon {
     display: none;
   }
