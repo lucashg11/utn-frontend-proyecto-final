@@ -55,7 +55,7 @@
 
 .message-content {
   max-width: 90%;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .message-timestamp {
@@ -66,6 +66,6 @@
 
 @media screen and (max-width: 768px) {
   .conversation-container {
-    height: calc(100vh - 60px);
+    height: calc(100dvh - 60px);
   }
 }
