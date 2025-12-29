@@ -10,7 +10,7 @@ function ChatScreen() {
     return (
       <div className="loading-container">
         <div className="loading-content">
-          <img className="loading-img" src="/chat-logo.svg" alt="" />
+          <img className="loading-img" src="/chat-logo.svg" alt="Chatty Logo" />
           <span className="loading-home">Chatty</span>
         </div>
       </div>
@@ -21,7 +21,11 @@ function ChatScreen() {
       <ContactSideBar />
       <div className="home-message-container">
         <div className="home-message-content">
-          <img className="home-message-img" src="/chat-logo.svg" alt="" />
+          <img
+            className="home-message-img"
+            src="/chat-logo.svg"
+            alt="Chatty logo"
+          />
           <p className="home-message">
             Para chetear, hacé click en tu lista de contactos
           </p>

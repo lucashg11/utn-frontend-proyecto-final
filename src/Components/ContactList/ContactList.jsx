@@ -23,7 +23,6 @@ function ContactList() {
             <div className="message-info">
               <div className="message-header">
                 <h2 className="contact-name">{contact.contact_name}</h2>
-                {/* <p className="message-time">{contact.last_message_created_at}</p> */}
                 <p className="message-time">10:00</p>
               </div>
               <div className="messagelist-content">

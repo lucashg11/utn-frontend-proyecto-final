@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext, useContext } from "react";
+import { createContext, useContext } from "react";
 import { Outlet, useParams } from "react-router";
 import { ContactListContext } from "./ContactListContext";
 
@@ -7,10 +7,7 @@ export const ContactDetailContext = createContext();
 const ContactDetailContextProvider = () => {
   const paramsURL = useParams();
   const contact_id = paramsURL.contact_id;
-  /* const [contactSelected, setContactSelected] = useState(null);
-  const [loadingContact, setLoadingContact] = useState(true); */
-  const { contactListState, getContactById, updateContactById } =
-    useContext(ContactListContext);
+  const { getContactById, updateContactById } = useContext(ContactListContext);
   const contactSelected = getContactById(contact_id);
 
   function addNewMessage(content) {
